@@ -1,0 +1,282 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="BreakTriggerScopeInArgument" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1176.8,3340</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1187.2,3275.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="answear" />
+      <Variable x:TypeArguments="x:String" Name="question" />
+      <Variable x:TypeArguments="x:String" Name="actionReact" />
+      <Variable x:TypeArguments="x:String" Name="checkQuestion" />
+      <Variable x:TypeArguments="x:Int32" Name="jeden">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: InstaLing - skuteczna nauka słówek" sap:VirtualizedContainerService.HintSize="1124.8,3163.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1091.2,2946.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1028.8,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <uix:NGetText DisplayName="Get Text 'Dokończ sesję'" sap:VirtualizedContainerService.HintSize="1028.8,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" TextString="[actionReact]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://instaling.pl/student/pages/mainPage.php?student_id=2137654" CvElementArea="811, 689, 294, 49" CvTextArea="890, 700, 136, 28" CvTextArgument="Dokoncz sesje" CvType="Button" DesignTimeRectangle="815, 691, 287, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Dokończ sesję'" FullSelectorArgument="&lt;webctrl aaname='Dokończ sesję' parentid='student_panel' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='student_panel' tag='A' type='' class='big_button btn btn-session sesion' /&gt;" Guid="62000ea1-727d-4660-9e04-3de94c41242f" InformativeScreenshot="949d1fb1a709a90c71c7cfbde7fe42a0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='InstaLing - skuteczna nauka słówek' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <If Condition="[actionReact = &quot;Dokończ sesję&quot;]" sap:VirtualizedContainerService.HintSize="1028.8,183.2" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376.8,444.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Dokończ sesję'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/student/pages/mainPage.php?student_id=2137654" CvElementArea="812, 639, 291, 49" CvTextArea="890, 651, 136, 26" CvTextArgument="Dokoncz sesje" CvType="Button" DesignTimeRectangle="815, 641, 287, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Dokończ sesję'" FullSelectorArgument="&lt;webctrl aaname='Dokończ sesję' parentid='student_panel' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Dokończ sesję' parentid='student_panel' tag='A' type='' class='big_button btn btn-session sesion blink_me' check:innerText='Dokończ sesję' /&gt;" Guid="fd60c86f-5aa0-44dd-8f0f-cbacbdaea8d2" InformativeScreenshot="be19c36ade63af222f29d427e44b548f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='InstaLing - skuteczna nauka słówek' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Kontynuuj sesję'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=2137654" CvElementArea="602, 457, 731, 82" CvTextArea="890, 487, 156, 22" CvTextArgument="Kontynuuj sesje" CvType="Button" DesignTimeRectangle="607, 460, 725, 78" DesignTimeScaleFactor="1.25" FriendlyName="'Kontynuuj sesję'" FullSelectorArgument="&lt;webctrl id='continue_session_button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='continue_session_button' tag='DIV' type='' class='big_button' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Kontynuuj sesję' /&gt;" Guid="35815579-cee3-4d35-ad2e-173a83cc4706" InformativeScreenshot="d545765c448ca86e7051da94aca41e12.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="376.8,444.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zacznij codzienną sesję'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/student/pages/mainPage.php?student_id=1723885" CvElementArea="811, 528, 294, 50" CvTextArea="845, 542, 224, 25" CvTextArgument="Zacznij codzienna sesje" CvType="Button" DesignTimeRectangle="815, 531, 287, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Zacznij codzienną sesję'" FullSelectorArgument="&lt;webctrl aaname='Zacznij codzienną sesję' parentid='student_panel' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zacznij codzienną sesję' parentid='student_panel' tag='A' type='' class='big_button btn btn-session sesion blink_me' check:innerText='Zacznij codzienną sesję' /&gt;" Guid="68161bf2-0aba-4315-9cbf-dd4e8f42431e" InformativeScreenshot="3fd6d87a58c466332625107736d36dfc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='InstaLing - skuteczna nauka słówek' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zacznij swoją'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=1723885" CvElementArea="602, 579, 730, 80" CvTextArea="821, 607, 291, 23" CvTextArgument="Zacznij swoja codzienna sesje" CvType="Button" DesignTimeRectangle="607, 580, 725, 78" DesignTimeScaleFactor="1.25" FriendlyName="'Zacznij swoją'" FullSelectorArgument="&lt;webctrl id='start_session_button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='start_session_button' tag='DIV' type='' class='big_button' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Zacznij swoją codzienną sesję' /&gt;" Guid="77e23dc9-926f-44c8-a94f-4a4233792957" InformativeScreenshot="f1bfa134b1495df4b11794e9bd0c55d5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[jeden = 1]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1028.8,2347.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="995.2,2210.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sprawdź'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=1723885" CvElementArea="603, 499, 730, 83" CvTextArea="925, 528, 85, 23" CvTextArgument="Sprawdz" CvType="Button" DesignTimeRectangle="607, 501, 725, 78" DesignTimeScaleFactor="1.25" FriendlyName="'Sprawdź'" FullSelectorArgument="&lt;webctrl id='check' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='check' tag='DIV' type='' class='' aaname='' check:innerText='Sprawdź' /&gt;" Guid="79054de9-a7ac-4e20-aac7-854169284f46" InformativeScreenshot="e9839f9dd8e90d8204fd79bf1e94d3d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText DisplayName="Get Text 'die Anreise'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" TextString="[answear]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=1723885" CvTextArea="914, 331, 108, 18" CvType="AnyWordGroup" DesignTimeRectangle="607, 306, 725, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'die Anreise'" FullSelectorArgument="&lt;webctrl id='word' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='word' tag='DIV' type='' class='' /&gt;" Guid="c2b7b383-baca-4fad-b9f3-2cb8cc9869b3" InformativeScreenshot="a2a8f00f184722398cc394f676fad005.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Następne'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=1723885" CvElementArea="603, 493, 730, 82" CvTextArea="921, 523, 92, 23" CvTextArgument="Nastepne" CvType="Button" DesignTimeRectangle="607, 496, 725, 78" DesignTimeScaleFactor="1.25" FriendlyName="'Następne'" FullSelectorArgument="&lt;webctrl id='nextword' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nextword' tag='DIV' type='' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Następne' /&gt;" Guid="29ecf067-7a30-4f1a-b0ce-d5ca71e0c760" InformativeScreenshot="7fa2d536e58799616a19fb5fa0424931.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sprawdź'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=1723885" CvElementArea="603, 499, 730, 83" CvTextArea="925, 528, 85, 23" CvTextArgument="Sprawdz" CvType="Button" DesignTimeRectangle="607, 501, 725, 78" DesignTimeScaleFactor="1.25" FriendlyName="'Sprawdź'" FullSelectorArgument="&lt;webctrl id='check' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='check' tag='DIV' type='' class='' aaname='' check:innerText='Sprawdź' /&gt;" Guid="79054de9-a7ac-4e20-aac7-854169284f46" InformativeScreenshot="e9839f9dd8e90d8204fd79bf1e94d3d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Następne'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=1723885" CvElementArea="603, 493, 730, 82" CvTextArea="921, 523, 92, 23" CvTextArgument="Nastepne" CvType="Button" DesignTimeRectangle="607, 496, 725, 78" DesignTimeScaleFactor="1.25" FriendlyName="'Następne'" FullSelectorArgument="&lt;webctrl id='nextword' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nextword' tag='DIV' type='' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Następne' /&gt;" Guid="29ecf067-7a30-4f1a-b0ce-d5ca71e0c760" InformativeScreenshot="7fa2d536e58799616a19fb5fa0424931.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT answer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Text="[answear+&quot;[k(enter)]&quot;]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=2137654" CvElementArea="596, 411, 728, 54" CvType="InputBox" DesignTimeRectangle="596, 412, 729, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT answer'" FullSelectorArgument="&lt;webctrl parentid='learning_form' tag='TABLE' /&gt;&lt;webctrl id='answer' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='learning_form' tag='TABLE' /&gt;&lt;webctrl id='answer' type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="1e797ff4-cd25-434d-b5c3-bd6b3566c334" InformativeScreenshot="fff98dc0b7da10a4c32da3f38796c22a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Następne'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=1723885" CvElementArea="603, 493, 730, 82" CvTextArea="921, 523, 92, 23" CvTextArgument="Nastepne" CvType="Button" DesignTimeRectangle="607, 496, 725, 78" DesignTimeScaleFactor="1.25" FriendlyName="'Następne'" FullSelectorArgument="&lt;webctrl id='nextword' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nextword' tag='DIV' type='' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Następne' /&gt;" Guid="29ecf067-7a30-4f1a-b0ce-d5ca71e0c760" InformativeScreenshot="7fa2d536e58799616a19fb5fa0424931.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NCheckState DisplayName="Check App State 'Powrót na stronę główną'" sap:VirtualizedContainerService.HintSize="952,676.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Timeout="0.2" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,458.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Powrót na stronę główną'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95a2a98f-1c68-48cf-8812-19f7b6bea3cc" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=2137654" CvElementArea="590, 585, 730, 80" CvTextArea="838, 613, 239, 23" CvTextArgument="Powrot na strone glowna" CvType="Button" DesignTimeRectangle="596, 586, 725, 78" DesignTimeScaleFactor="1.25" FriendlyName="'Powrót na stronę główną'" FullSelectorArgument="&lt;webctrl id='return_mainpage' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='return_mainpage' tag='DIV' type='' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Powrót na stronę główną' /&gt;" Guid="99c76009-5cf6-4eee-9db1-9255a1aa5658" InformativeScreenshot="d14d7de2cdcc3611bfe0ce6201b60e1f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="387.2,82.4" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                        <ui:Break sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="Break_1" />
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,106.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://instaling.pl/ling2/html_app/app.php?child_id=2137654" CvElementArea="590, 585, 730, 80" CvTextArea="838, 613, 239, 23" CvTextArgument="Powrot na strone glowna" CvType="Button" DesignTimeRectangle="596, 586, 725, 78" DesignTimeScaleFactor="1.25" FriendlyName="'Powrót na stronę główną'" FullSelectorArgument="&lt;webctrl id='return_mainpage' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='return_mainpage' tag='DIV' type='' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Powrót na stronę główną' /&gt;" Guid="05b5100a-fdb1-4213-be59-8659d5242ec7" InformativeScreenshot="3fd3e4273c5498f10e2becbc7aff1f74.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='instaling' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+            </ui:InterruptibleDoWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAuUSURBVFhHtZgJdJTVFcdHliwkgQQoCIEQAoRklswkwxayhyABElCgaG3lCFrqgh494mmrAbR42p4qO5EQEgibLbgUi1JlyUJYBA5UEesaBLKBkI0kJJmZd0//9703k2HRA1rfOf/zv/d+b777m/t9mZl8hh+7Do6NDrqYFjfvYpp9HXT4Upr90sVUuwsx61Jtmv3kxdS4DdVpcbOOjY0O1S/7+ZYl0L/bQwP7RlSnxs4FzB40bwMQwYVyO9V65RzXIobY22tTYvfWptgemTOgj8ka6O+rT/v/Wff1CzFVptievpQ2qhwA7QDgxpAGSpEQVJuCWkqshKpRNVGTGivjGtSVx52pSbEuvhfn1Kf/8SspONBveWTYA18lWkt4YtyYgSSMBFIwcAbQEKgpoOuVbBPVybFUnWyT8RfjLQdfiwybwz10uztbpgD/kI/jY5aiWRXkUo1jJZSeCIuB0NAj4Qbx1JI8YHAbVSdJCciFvObEGGOOMcC/p257e6tHly4+ACmUAF4NZRN18s6GqqmqwavgWqhZkVtFdSI80Upuh9hlXAmHCrmnbv/DyxToH4J3XeiZAjdScN4gEgDN4dwQsQRQriUh0FzFCfAE5AkxBME74wvs4y2FfNU0xq1XUkig36mx5j9pEM9UtGuhEU9GA0ASoBMEzRFzY1lXEB4xzE0aLyVOjo7+U1LPHt9/Ty6LHDwHk6mVl4LBNIBu7nE5CQWlYFhohKmw83S0Q+MtckKsSgUCoTbewk4X4rXL2Fz1asTABzTO9Wta32Dzf+PNZTdMpxPAA+HRTdNheU1EyyLOKymI8WZxPh6AAOMaYi0zy/Xp6Oiy7D69zBpLLf+IYN+ZKycvKr5vjLigQPhdSwAevWrKJ9c5O/ZVpY8Rtb/7DTX/ezd1fFtBwukkEi6ithpyXXyHnJ/NJ+exBHJ+ZCfn0Vjh/AhiPxqLPI5rqi7dpnNbm+uE7Wl7tH83jWcw9EkPN43eMv3MK8+l0ZepVg3Cl8Ht6t2733FVZpK4/PwCav/mK+LlcAqqb3FRdb1SQ6uLOhxCHhMNx8j5+TPkOpECQBtgrBDDSKn8iBWxlRyyZhWOo9by+TN6R2g8g8G2Zfqjtm33ivT1WbRn5mgJgksgL4v7EuD+4EtDldnponHrRuFsbCAnhvXJeQe9caSNXnqnhRZsbqYFW5pp6bstVFh6jU5+65B7yNFIrupNwnkyA0AxxECOI3DAuI7GADBG5qpm4bzddSxmrsYzGGK3Td9r2zZdQLRgSYa+HwA4jqHMdE5JVE5KoMathcLVfJUaMLG1e6/R7LVNlPBKA9kXX69xLzXQrDVNcg/vJedVclXhjR1PAqAFMgvHEbN0CHAyhkw6N+2RcNF/mxhq3TqtnQGtW6fTqKJptOnheHFunEnLrByQlxY+KSfX2Cro2e3NFP+ygoljLVJyA3KNnfc8u71FQgoHpv75UxrKBECTBpJOzsPsRkzZyIBtFdtDgwy2bdkzYzZnU8zmaVA2WbdMo8T12eJ0skV8O9bIorPQefxAaD1+FJdM0Jp9rZhQPcUuuj2Nwd7Ve1vla0XLV+T6aBRgooWWjqPIIWN2rfKoeQbr5uwCSxEDZgsFCsiiLPHnJxPpm3FGcXYMAKHaxx+WNz3fVzNWNZEtp14JAJ74VtLHZ61ppI9xv/JynX5QgmgxHDQSUB4JxyF4eWQeA56yFGURJBjUHWesyhS7p8eJs6OjWdS0603qwF9rfsk1GrVENbXegca9XE/bDrfJKbouvQuwkeQ8FMkSXgIcHHJwfCjysMGyOavFsglQkHnTVOVFU4W1cIpYuDBJnE4wigoAOmtrcB8JWvJOM8Xk1N0k6w2xGyzmxc5azlvNVN+Me7G1As1HAM6t4SwAehwahgkOu2TQYMK8cSp5SeYJuZli54w4UWEfKYTLRVV1Lnqs6CpZ0JTFjd2xzL3iW9Xmb2yiSpwDn+jcXAogEkYpQjjLI1QNjuMuA+Bcxo1ThKlwChkh6QWTZQyJ376YTKcwRf6W4JNzE/MLV6A6MqOpx93iXIr36H1a8zc1yTfJ3zaO8qGAGCrYIUIMhUt3lIejFs5OBtPGqd8ZCycLCVQwWYEyoJKIWZ8pin4Zh6+yb+TleeHNq2RCYxMaKr9R31e/Qovebpa3iWirIsdBwBwcAh8iIIYTnMtaOdfCOG8xGAumHIkGjNSGTMFu3MB5JktwbfJf0+l88XvkwA2+5dA1si+5QkaAGNH0dmVddIXyilvlH5qr5u8ACwNMmHSlwQCS8orDTjJgHiAUEANyrBW1YZKIQo21ZMOT8iPi1DkHZa9soGg0ZRn/qACi4d8nPp61ooFOnO2Q53B9MhsTGiRhnNIHkaNskIzZtYSjNLTAEJWf+YgCgfIniej8SYSaFsdczxT2wmn0Zd1Z+TGx4sNW/IFcoSg0V7rsgemsKXGN9y7/oFl9UDccwuUcAZBQFqBCAajjsoHwgYALVSodMANfdWODRq6/pw0iSHiUx/kkrql6/j3isQ8WU0NbE365CHpicxNZci7TyD/cIAB55wz3xBZ+jYuutTVSx6cPSwhn2QDhLLsbU7obMCrmmqMMeSni0rvbK7b3Vf/wR66/5/1IAClNFJ2xd22iGLNpJuX/Zwc1tePzDA2Xf9BCk5fV4w/gMkUCxlu2RZdxWetpGfbw3ha85mJFHrUdMiqo0v5wKQDC3eIccpb23yvheEWsTZ8LgPYRgBixDjDrJiowOHLyridu+RXln9pBDdeacMmIjld0UO7+Fnrhras0r6CB5kK/33mVig624n7tkHt4754zW+l0yTjRLgH6sQAjXesXbmF6/chV3P9RjWcwBCUMjADEQYYY8TpDZcAz2Gm4rGWI4RDDso8unEHz9+SIw5Un5U3fjh+nPKXKOiddgOrwccQ/Ynl9caWCHsfel99OE43FPCGG6AuIvu6YHCUQx3BnCY6V9P10frZf55MHn8FB3YauSntq+LqMNgDQ8FwJBJgJXrGClnku4F+fKCz4gfvgrudox2fv09d15zEtp9TXdefon1/so9lvP0WW/CxKzE8RlXtxf5X0YQGkDwA9scw7497UXhy8KG5k1+uf3wTY+5vCX0suHbZ2gmtY7gQBB4zSsNx04lxLHvNySB5Hzp4ucMtwLI+PyE0Ta3fiu7wkBJPpDZAQQITIXMbF8GKuBcu47r1eZfend7/1c5u+v456ACevjliTTizdUErXhHTdnF0pzX0ctTS1R++dVjBOXN7XB0DBLEBBxTJmKI5l7ijuxard8Lz/Qxrn5uUXFewX9sr4pUPXcBMpNNLNV8NXp4mhcHVcQ3jX2JG795tzk0Xxv/CBW9yLBSB4SU/EUuSUHgQwKXF+Z1DOhLiuP/wwySc0MCRidfpGbiQbX6dUd035Ku9jnfvD5b5U8czmGHF1vxsoyC1yHGAPFMoZLpAc+4M2Wod1uc2HSD5dfNCgcOiqVDRMFeFwbqobKwDAybo+Juu8X9VE4uvx4vju/tRxgEEAwC6hZKzyAwGoBSAOKAz0M9zewyP36j4woOegl+JzhqxIqRmyMkVokVd8vVbIY/L48FVJ4tXtI6hlP0P0AEAP7f7kPOAvHPv9MTE/p/OAX9W5HX5LY4bd1Vu3vbPlGxns2+f+yDlhf0k4CAARBoCwlckKZgV7sgiTQn15MmopFL4ymbLy4sSJ3fhskzB+DMNQMgYU3Lf98i7f0vyF3e7PsN/10x8HB8T1Mw1ZnrIYIGcAIhjG7YOXJYnBDMnx8iSKXJlIef8YQi37GMgXcNA+6ch92qFy54GAp2endbn++ctPXT6DA30D4weYAPIotHfwsuR2D6BbAJyYa6crH/Il9BGOfT7au7fB38flnTs/q1uEPbJr53OXn2uF5owNxSWdBagCwJ0CbCucdr2FXygHun/n2N/9iHO/T56juOu8s28EBemX3eEyGP4HrLauaaXfYekAAAAASUVORK5CYII=" InformativeScreenshot="3df89e00402617c5ec137781068bf482.jpg" Selector="&lt;html app='chrome.exe' title='InstaLing - skuteczna nauka słówek' /&gt;" Title="Validation Error - The current activity must be used within a Us*" Url="https://instaling.pl/student/pages/mainPage.php?student_id=2137654" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
